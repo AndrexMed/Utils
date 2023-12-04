@@ -1,0 +1,9 @@
+BULK INSERT TblArticulos_Estudiante
+
+FROM 'E:\backup\Datos_Articulos.txt'
+
+WITH (
+FIELDTERMINATOR = '|',
+CODEPAGE = '65001',  -- UTF-8 (incluye las Ñ's y las Tildes)
+ROWTERMINATOR = '\n'
+)

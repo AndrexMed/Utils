@@ -1,0 +1,11 @@
+Comando para Hacer Scaffolding
+
+dotnet ef dbcontext scaffold "Data Source=localhost;Initial Catalog=Tarifas_Test;Integrated Security=True;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer --tables Programa Materia --output-dir Models
+
+dotnet ef dbcontext scaffold "Data Source=192.168.20.120;Initial Catalog=Agora;user id=galzate;password=C3sd3.G4lz4t3*;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer --table tblProgramas --table tblMaterias --table tblMaterias_Tarifas --table tblMaterias_Plan --output-dir Models
+
+----------------------------------------------------------------------------------------
+por consola Administrador de paquetes
+Scaffold-DbContext "Name=Conexion" Microsoft.EntityFrameworkCore.SqlServer -Tables tblEstudiantes_Articulos_Entregados,TblArticulos_Estudiante -OutputDir test
+
+Scaffold-DbContext "Name=stringDbCes" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
