@@ -50,4 +50,9 @@ INNER JOIN
 	WHERE p1.codigo_materia_cupo = 'DE0007601022023011059901'
 
 
+--Permisos
+	USE DBCESDEV3;
+ALTER ROLE db_ddladmin ADD MEMBER Andrex;
+
 use [YourDatabaseName] EXEC sp_changedbowner 'sa'
+----------------------------------------------------
