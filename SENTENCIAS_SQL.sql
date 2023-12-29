@@ -48,3 +48,6 @@ FROM
 INNER JOIN
     tblMaterias_Matriculadas_temporal p2 ON p1.codigo_estudiante = p2.codigo_estudiante
 	WHERE p1.codigo_materia_cupo = 'DE0007601022023011059901'
+
+
+use [YourDatabaseName] EXEC sp_changedbowner 'sa'
