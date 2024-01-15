@@ -61,3 +61,6 @@ use [YourDatabaseName] EXEC sp_changedbowner 'sa'
 ALTER TABLE Tabla1
 ADD CONSTRAINT FK_Tabla1_Tabla2
 FOREIGN KEY (CampoTabla1) REFERENCES Tabla2(CampoTabla2);
+
+Reiniciar identity de una tabla
+DBCC CHECKIDENT('dotacion_parametrizacion', RESEED, 0);
