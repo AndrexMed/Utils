@@ -56,3 +56,8 @@ ALTER ROLE db_ddladmin ADD MEMBER Andrex;
 
 use [YourDatabaseName] EXEC sp_changedbowner 'sa'
 ----------------------------------------------------
+	
+-- Agrega la clave externa en la tabla principal (Tabla1)
+ALTER TABLE Tabla1
+ADD CONSTRAINT FK_Tabla1_Tabla2
+FOREIGN KEY (CampoTabla1) REFERENCES Tabla2(CampoTabla2);
