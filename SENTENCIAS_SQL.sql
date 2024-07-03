@@ -64,3 +64,16 @@ FOREIGN KEY (CampoTabla1) REFERENCES Tabla2(CampoTabla2);
 
 Reiniciar identity de una tabla
 DBCC CHECKIDENT('dotacion_parametrizacion', RESEED, 0);
+
+--------------------------------------------------------------------------------
+	SELECT 
+    COLUMN_NAME AS ColumnName,
+    DATA_TYPE AS DataType,
+    CHARACTER_MAXIMUM_LENGTH AS MaxLength,
+    IS_NULLABLE AS IsNullable
+FROM 
+    INFORMATION_SCHEMA.COLUMNS
+WHERE 
+    TABLE_NAME IN ('persona')
+ORDER BY 
+    TABLE_NAME, COLUMN_NAME;
